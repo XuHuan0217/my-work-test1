@@ -7,14 +7,16 @@
 			table
 			{
 				border-collapse: collapse;
+				align-items: center;
 			}
 			table,td,th{
 				border: 1px solid black;
+				align-items: center;
 			}
 		</style>
 	</head>
 	<body>
-		<table>
+		<table align="center">
 			<tr>
 				<th>Name</th>
 				<th>like or no</th>
@@ -31,24 +33,33 @@
 		
 		
 		
-		<img src="img/HBuilder.png" id="demo2" style="display: none;" width="100" height="100"/>
-		<canvas id="myCanvas" width="150" height="150" style="border: 1px solid #00FF00;" ></canvas>
+		<img src="img/builder.png" id="demo2" style="display: none;" width="100" height="100"/>
+		<center><canvas id="myCanvas" width="150" height="150" style="border: 1px solid #00FF00;" ></canvas></center>
 		<script>
 			var c=document.getElementById("myCanvas");
 			var ctx=c.getContext("2d");
 			var img=document.getElementById("demo2");
-
-			img.onload = function() {
+			function showPic(){
 				document.getElementById("demo2").style.display = "block";
+			}
+			img.onload = function() {
 				ctx.drawImage(img,20,20);
 			} 
-
-		</script>
-		<script>
-			function sorry(){
-				var a = "byebye~we done!";
-				document.getElementById("demo2").innerHTML=a;
+			function myFunction(){
+				var y = "you said!";
+				var x = document.getElementById("word");
+				x.value =y + x.value.toUpperCase();
+				
+			}
+			function mouseOver(obj){
+				obj.innerHTML="if you say good words: thanks. if you say bad thing: just shut up!"
+			}
+			function mouseOut(obj){
+				obj.innerHTML="mouse over me"
 			}
 		</script>
+		<center>say somthing:<input align="center" type="text" id="word" onchange="myFunction()" /></center>
+		<p align="center">when your mouse leaves, the function will be executed, the lowercase will turn the uppercase</p>
+		<center><div onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" align="center" style="background-color: burlywood; ;width:120px;height:50px;padding:40px;">mouse over me</div></center>
 	</body>
 </html>
