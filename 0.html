@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>this is example from runoob.com</title>
+	</head>
+	<body>
+		<script>
+			function changeImage(){
+				element=document.getElementById("myimage")
+				if(element.src.match("builder")){
+					element.src="img/mylove.jpg";
+				}
+				else{
+					element.src="img/builder.png";
+					
+				}
+			}
+		</script>
+		<img id="myimage" onclick="changeImage()" src="img/builder.png" width="300" height="200"/ >
+		<p>click the picture to change another one</p>
+		<h1>please take care to choose!</h1>
+		<p>which one picture do you like?1 or 2?</p>
+		<p id="demo3" style="display: none">welcome!my friend!</p>
+		<input id=demo0 type="text" />
+		<script>
+			function choose(){
+				var a = document.getElementById("demo0").value;
+				if(a!=2){
+					alert("you must love the second picture.");
+				}else{
+					document.getElementById("demo3").style.display = "block";
+				}
+			}
+		</script>
+		<button type="button" onclick="choose()">tell me</button>
+	</body>
+</html>

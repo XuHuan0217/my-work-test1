@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Something about me</title>
+		<style>
+			body
+			{
+				background-color:#d0e4fe;
+			}
+			h1
+			{
+				color: olive;
+				text-align: center;
+				align-content: center;
+			}
+			p
+			{
+				font-family: "times new roman";
+				font-size: 20px;
+				align-content: center;
+			}
+			.button{
+				background-color: green;
+				color: white;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				cursor: pointer;
+			}
+			.button1{
+				background-color: red;
+				color: white;
+			}
+			
+		</style>
+	</head>
+	<body bgcolor="antiquewhite">
+		<h1 align="center" >this is my first html test</h1>
+		<p align="center" >Hello everyone, I am huan, I have a dream....em...Now I want to introduce someone who I love.</p>
+		<h5 align="center">Are you interested in it?:</h5>
+		<center><button  class="button" onclick="showPicture(true)">yes</button><button class="button1" onclick="showPicture(false)">no</button></center>
+		<p align="center" id="demo2"></p>
+		<img align="center" src="img/mylove.jpg" id="demo1" style="display: none;" width="300" height="200"/>
+		<!--
+        	作者：offline
+        	时间：2018-03-26
+        	描述：<img src="img/mylove.jpg" />
+        	<p id="demo"></p>
+        	<form action="demo-form.php" method="get">
+		Are you interesting it?:<input type="text"/><br>
+			
+		var b = 0;
+				if(b=0){
+					document.getElementById("demo2").innerHTML=a;
+					b=1;
+				}
+				else{b=0;}
+				
+				
+				ctx.beginPath();
+			ctx.arc(95,50,40,0,2*Math.PI);
+			ctx.moveTo(0,0);
+			ctx.lineTo(200,100);
+			ctx.strokeStyle="aqua";
+			ctx.stroke();
+			ctx.font="30px Arial";
+			ctx.strokeText("hello",10,25);
+			ctx.strokeStyle="black";
+			ctx.fillText("world",25,50);
+			ctx.strokeStyle="black";
+			
+			</script>
+		<script>
+			function sorry(){
+				var a = "byebye~we done!";
+				document.getElementById("demo2").innerHTML=a;
+			}
+			<canvas id="myCanvas" width="305" height="205" style="border:1px solid #00FF00;"></canvas>
+			var c=document.getElementById("myCanvas");
+				var ctx=c.getContext("2d");
+				var img = document.getElementById("demo1");
+				img.onload = function(){
+					ctx.drawImage(img,5,5);}
+       -->
+        
+		<script language="JavaScript">			
+			function showPicture(x){
+				var a = "byebye~we done!";					
+				if(x){			
+					document.getElementById("demo1").style.display = "block";
+					document.getElementById("demo2").innerHTML="";
+				}else{
+					document.getElementById("demo1").style.display = "none";
+					document.getElementById("demo2").innerHTML=a;
+				}	
+				
+			
+			}	
+		
+		</script>
+		
+		
+		<p align="center">This is his weibo:</p>
+		<center><a href="https://weibo.com/liguangjie?refer_flag=1001030101_" target="_blank">His weibo</a></center>
+		
+		
+		
+		<p align="center">-----------------------------------------------------------我是分割线</p>
+		
+		
+		<p align="center">if you do not mind to see some other thing, you can click the link below:</p>
+		<center><a href="http://127.0.0.1:8020/HelloHBuilder/mytest0.html" target="_blank">I am mytest0.html</a></center>
+		<br />
+		<center><a href="http://127.0.0.1:8020/HelloHBuilder/0.html" target="_blank">I am 0.html</a><br /></center>
+		
+	</body>
+</html>
